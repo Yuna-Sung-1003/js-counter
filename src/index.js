@@ -1,14 +1,7 @@
 const number = document.getElementById("number");
-const increase = document.getElementById("increase");
-const decrease = document.getElementById("decrease");
-// innerText: 해당 태크 안에 정보를 볼 수 있음
-// offsetTop: Top 값 알아 볼 수 있음
-// console.log(number);
-// console.log(increase);
-// console.log(decrease);
-
-//이벤트처리
-// .on_____ =(()=>{})
+//id 가 없을 땐, 쿼리셀렉터 사용. 태그 이름으로 찾아냄
+const buttons = document.querySelectorAll("button");
+const [increase, decrease] = buttons;
 
 increase.onclick = () => {
   const current = parseInt(number.innerText, 10); //10진수
